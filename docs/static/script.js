@@ -12,8 +12,9 @@ window.onload = function () {
 
     ctx = canvas.getContext('2d');
 
-
-    floor = new Floor(window.innerWidth / 2 - 60, window.innerHeight / 2 - 50, 100, 100);
+    let radius = 400;
+    let halfRadius = radius / 2;
+    floor = new Floor(window.innerWidth / 2 - halfRadius, window.innerHeight / 2 - halfRadius, radius, radius);
     //_mass, _rad, _pos, _vel
     for (var ii = 0; ii < 1200; ii++) {
         var random = Math.random();
